@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ZenStack</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="navbar.css">
-</head>
-<body>
-    <section id="sidebar">
-        <div id="sidebar-container">
-            <button  class="sidebar-nav-icon--button">
-               <svg
+<svg
+                        width="24"
+                        height="24"
                         viewBox="0 0 24 24"
                         fill="none"
                          xmlns="http://www.w3.org/2000/svg"
@@ -29,18 +19,4 @@
                            clip-rule="evenodd"
                            d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z"
                            fill="currentColor"/>
-                </svg>
-            </button>
-            <nav id="sidebar-nav">
-                <ul class="sidebar-off">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="settings.html">Settings</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-    <section id="main"></section>
-    <section id="footer"></section>
-    <script src="main.js"></script>
-</body>
-</html>
+</svg>

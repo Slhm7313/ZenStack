@@ -6,10 +6,17 @@
 }
 
 #icon-button-navbar{
+    background-color: var(--darkPurple);
+    width:50%;
+    color: var(--purple);
+}
+.sidebar-nav-icon--button{
+    justify-self: end;
     grid-column: 2;
     background-color: var(--darkPurple);
-    justify-self: end;
+    width: 40%;
 }
+
 #sidebar-nav{
     grid-row: 2;
     grid-column: 2;
@@ -21,4 +28,8 @@
 
 #img-icon-navbar{
     height:100%;
+    width: max(100%, 70%);
+}
+.sidebar-off{
+    display: none;
 }
