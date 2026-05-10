@@ -4,10 +4,12 @@ const sidebarButton = document.querySelector("#sidebar-button-On-Off-js");
 
 function sidebarOn() {
     sidebar.classList.add("sidebar-on");
+    sidebarButton.classList.add("sidebar-nav-icon--button-on");
     localStorage.setItem("sidebarSwitch", "on");
 }
 function sidebarOff() {
     sidebar.classList.remove("sidebar-on");
+    sidebarButton.classList.remove("sidebar-nav-icon--button-on");
     localStorage.setItem("sidebarSwitch", null);
 }
 

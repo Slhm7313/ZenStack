@@ -1,80 +1,94 @@
-#sidebar-container{
+#sidebar-container {
     display: grid;
-    grid-template-columns:3fr 1fr ;
-    grid-template-rows:1fr 1fr;
-    gap: 0;/
+    grid-template-columns:3fr 1fr;
+    grid-template-rows: .5fr 1fr;
+    gap: 0;
 }
 
-
-.sidebar-nav-icon--button{
-    justify-self: end;
+#test {
     grid-column: 2;
-    background-color: var(--darkPurple);
+    background-color: var(--midPurple);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sidebar-nav-icon--button {
+    justify-self: end;
+    overflow: visible;
+    color: var(--purple);
+    background: none;
+    grid-column: 2;
+    grid-row: 1;
     width: 40%;
     border: none;
     outline: none;
+    padding: 0;
     text-align: center;
-    border-radius: 80%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#icon-button-navbar{
-    background-color: var(--darkPurple);
-    width:60%;
+.sidebar-nav-icon--button-on {
+    grid-column: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 40%;
+    rotate: 360deg;
+    transform: translateX(-150%) rotate(360deg);
+}
+
+#icon-button-navbar {
+    width: 60%;
     color: var(--purple);
     border: none;
     outline: none;
 }
 
-#sidebar-nav{
+#sidebar-nav {
     grid-row: 2;
     grid-column: 2;
 }
 
-#img-icon-navbar{
-    height:100%;
+#img-icon-navbar {
+    height: 100%;
     width: max(100%, 70%);
 }
+
 .sidebar-off {
-    display: flex; /* Το display:none κόβει το animation, οπότε χρησιμοποιούμε width:0 */
-    align-items: flex-end; /* Σπρώχνει το περιεχόμενο στα δεξιά */
-    justify-content: space-evenly;
+    display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    font-size: .5rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-
-    /* Animation settings */
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+    transform: translateX(120%);
+    transition: transform 1s ease-in-out;
+    background-color: var(--midPurple);
 }
 
 .sidebar-on {
     display: flex;
-    align-items: start; /* Κρατάει τα πάντα δεξιά καθώς μεγαλώνει */
-    justify-content: space-evenly;
     flex-direction: column;
-
-    /* Μεγαλύτερα στοιχεία */
     gap: 1rem;
-    font-size: 1.5rem;
-    width: 100%; /* Το πλάτος που θέλεις να πιάνει όταν ανοίγει */
-    opacity: 1;
-
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    transform: translateX(0);
     background-color: var(--midPurple);
-    transition: all 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
-.link-navbar{
+
+.link-navbar {
     color: var(--lightPurple);
     text-decoration: none;
 }
 
-.li-navbar{
+.li-navbar {
     list-style: none;
     white-space: nowrap;
+    padding-left: 1rem;
+}
+
+#home-link-sidebar {
+    padding-top: 1rem;
+}
+
+#settings-link-sidebar {
+    padding-bottom: 1rem;
 }
